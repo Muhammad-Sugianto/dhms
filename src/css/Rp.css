@@ -1,0 +1,71 @@
+/* rp.css */
+
+.rp {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background: url('../img/background.jpg') center/cover;
+  background-size: cover;
+  animation: backgroundAnimation 10s linear infinite;
+}
+
+@keyframes backgroundAnimation {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+.rp-list {
+  display: flex;
+  flex-wrap: wrap; /* Menambahkan wrap agar item dapat memulai baris baru jika tidak cukup lebar */
+  justify-content: space-around; /* Menyebar item secara merata di dalam container */
+}
+
+.rp-item {
+  width: 48%; /* Setiap item akan memiliki lebar 48% untuk memastikan 2 item per baris */
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.8); /* Background putih dengan transparansi */
+  border-left: 2px solid #34dbbc95;
+  padding-left: 20px;
+  padding: 20px;
+  animation: zoomAnimation 0.5s ease-in-out;
+  box-sizing: border-box; /* Menambahkan ini agar padding tidak mempengaruhi lebar elemen */
+}
+
+@keyframes zoomAnimation {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.rp-item h3 {
+  margin-bottom: 5px;
+}
+
+.school {
+  font-style: italic;
+  color: #000; /* Ganti warna teks agar terlihat di atas background putih */
+}
+
+.year {
+  font-weight: bold;
+  color: #000; /* Ganti warna teks agar terlihat di atas background putih */
+}
+
+.description {
+  margin-top: 5px;
+  color: #000; /* Ganti warna teks agar terlihat di atas background putih */
+}
+
+/* Menambahkan aturan untuk memastikan setiap item hanya lebar 48% */
+@media screen and (max-width: 767px) {
+  .rp-item {
+    width: 100%;
+  }
+}

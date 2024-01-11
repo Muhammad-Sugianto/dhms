@@ -1,0 +1,90 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #34dbbc95;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out; /* Animasi ease-in-out pada transform */
+}
+
+.profile-image:hover {
+  transform: scale(1.1); /* Efek scaling ketika hover */
+}
+
+
+.profile-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-name {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.profile-info {
+  padding: 10px;
+  text-align: center;
+}
+
+.profile-detail {
+  margin-bottom: 15px;
+}
+
+.label {
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.value {
+  font-size: 20px;
+  color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .profile {
+    flex-direction: row;
+  }
+
+  .profile-image {
+    max-width: 250px;
+  }
+
+  .profile-info {
+    text-align: left;
+    margin-left: 20px;
+  }
+}
+
+/* Background Animation */
+@keyframes backgroundAnimation {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+.profile {
+  animation: backgroundAnimation 10s linear infinite;
+  background-size: 150% 150%;
+}

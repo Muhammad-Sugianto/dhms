@@ -1,0 +1,43 @@
+.projects {
+  text-align: center;
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.project-item {
+  flex: 1;
+  text-align: center;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-item:hover {
+  transform: scale(1.05);
+}
+
+.project-image {
+  width: 20%;
+  height: auto;
+  border-radius: 50%; /* Set border-radius to create a circular shape */
+  margin-bottom: 10px;
+}
+
+.project-description {
+  color: #333;
+}
+
+.project-description h3 {
+  margin-bottom: 10px;
+}
+
+.project-description p {
+  font-size: 14px;
+}

@@ -1,0 +1,27 @@
+/* rpBg.css */
+
+.rp-bg {
+    background: url('../img/rp.jpeg') center/contain no-repeat; /* Replace with your background image path */
+    height: 250px; /* Adjust the height based on your design */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff; /* Set the text color */
+    text-align: center;
+  }
+  
+  /* Additional styling for content within the section */
+  .rp-bg h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .rp-bg p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better readability */
+    border-radius: 10px;
+  }
+  

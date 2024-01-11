@@ -1,0 +1,36 @@
+/* Header.css */
+
+@keyframes runAnimation {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(20%);
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #34dbbc95;
+  padding: 20px;
+  margin-bottom: 0; /* Menghilangkan margin bawah */
+}
+
+.portfolio-title {
+  color: #ffffff;
+  margin: 0;
+  font-family: 'Your-Modern-Font', sans-serif; /* Ganti 'Your-Modern-Font' dengan nama font modern yang Anda pilih */
+  animation: runAnimation 5s linear infinite; /* Ubah durasi dan timing function sesuai kebutuhan */
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
